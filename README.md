@@ -1,9 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a fork of EPAM-JS-Competency-center/shop-react-redux-cloudfront
 
 ## Available Scripts
 
 In the project directory, you can run:  
-You can use NPM instead of YARN (Up to you)  
+You can use NPM instead of YARN (Up to you)
 
 ### `yarn start` OR `npm run start`
 
@@ -43,3 +44,11 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## How to check what I did
+
+1. S3 bucket has been created and configured properly. Changed the bucket policy. S3-website URL shows 403 Access Denied error: http://app-rsschool.s3-website-eu-west-1.amazonaws.com/
+2. CloudFront distribution is created and configured properly and the site is served now with CloudFront and is available through the Internet over CloudFront URL: http://d3h41k2op2xo7p.cloudfront.net
+3. Serverless-finch and serverless-single-page-app plugins are added and configured. Site is served now with CloudFront and is available through the Internet over CloudFront URL: http://d2seyincuzjr1.cloudfront.net
+
+I should note http://d3h41k2op2xo7p.cloudfront.net and http://d2seyincuzjr1.cloudfront.net are the different links and the last contains modified app, look at the top left corner.
